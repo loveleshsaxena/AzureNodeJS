@@ -58,3 +58,10 @@ chmod +x AlphaClient.sh
 7. It should complete setup and you should see the display message 'AlphaClient configured successfully' on screen. 
 
 The user will be able to see the ssh login attempts on MetricServer for this client.
+
+
+## Future work
+There are below tasks which are identified to be picked up in future:
+1. Run AlphaServer on a service which can be handled at OS level.
+2. Use DB instead of flat files for storing the client info.
+3. Install a load balancer/reverse proxy server (NGINX) to handle load in a better way.
