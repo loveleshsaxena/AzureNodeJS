@@ -10,4 +10,5 @@ if [[ $bashRCContent =~ $lookUpLine ]]; then
 else
     echo "AlphaClient not configured on this machine. Will start configuring..."
     cat AlphaClient.config >> ~/.bashrc
+    echo "AlphaClient configured successfully"
 fi
