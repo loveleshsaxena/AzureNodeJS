@@ -5,6 +5,30 @@ This project consist of a MetricServer and MetricClient code. The application is
 ## MetricServer
 This is a server which will listen to all clients sending info to it and provide a GET API to view all the info and a POST API which will be used by clients to push metric information.
 
+### MetricServer Setup via automation
+To setup MetricServer on a server:
+1. SSH into the machine where you want to setup MetricServer.
+2. Clone the repo using (make sure to install git using 'yum install git'):
+```
+git clone https://github.com/loveleshsaxena/AzureNodeJS.git
+```
+3. Go to the the server directory:
+```
+cd AzureNodeJS/AlphaServer
+```
+4. After this, please update the permission for bash script by:
+```
+chmod +x AlphaServer.sh
+```
+5. Once all this is done, please execute the bash script to configure system as MetricServer:
+```
+./AlphaServer.sh
+```
+6. It should complete setup and the server should be up and running. 
+
+The user will be able to browse the web app on port 3000 on public IP of the server.
+
+
 ## MetricClient
 This is a client which will register to the server by endpoint config like publicIP and port, and then it will start sending ssh attempts information to the server.
 
